@@ -1,0 +1,24 @@
+<center><input type="text" name="search" class="form-control" ng-model="search" placeholder="Search by any Field"></center><br/><br/>
+<table class="table table-bordered">
+	<thead>
+		<th>Employee ID</th>
+		<th>Fname</th>
+		<th>Lname</th>
+		<th>Gender</th>
+		<th>Department</th>
+		<th>Actions</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="data in details | filter:search">
+			<td>{{data.id}}</td>
+			<td>{{data.fname}}</td>
+			<td>{{data.lname}}</td>
+			<td>{{data.gender}}</td>
+			<td>{{data.department}}</td>
+			<td>
+				<button class="btn btn-danger" ng-click="deleteInfo(data.id);"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+				<a href="#/update?id={{data.id}}"><button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-edit"></span>Edit</button></a>
+			</td>
+		</tr>
+	</tbody>
+</table>
