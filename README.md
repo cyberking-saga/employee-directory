@@ -1,4 +1,5 @@
 # Employee Directory
+
 ## Technology Used
 
 ### Front-end
@@ -9,6 +10,8 @@
 ### Back-end
   * API in PHP
   * DB of directory in MySQL
+
+## Information about Application 
 
 ### Different Fields in Employee Form
 * Employee ID *(Primary Key)*
@@ -37,7 +40,8 @@ There are two button in the menubar:
  * *Homepage*
  * *Insert a new Record*
  
-Homepage path looks like:
+### Different routes or URL
+Homepage:
 ```sh
 http://localhost/directory_name/#/
 ```
